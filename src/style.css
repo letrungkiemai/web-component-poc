@@ -1,0 +1,14 @@
+
+body {
+  margin: 0;
+  text-align: left;
+  font-style: normal;
+  font-variant: normal;
+  background: 0% 0% no-repeat padding-box;
+  background-image: url(../public/assets/bg-img.png);
+  background-size: 100%;
+  opacity: 1;
+  max-width: 100vw;
+  height: auto;
+  min-height: 100vh; 
+}
