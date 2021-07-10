@@ -143,7 +143,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 var template = document.createElement('template');
-template.innerHTML = "\n      <div class=\"grid-item\">\n        <img src=\"https://betacdn.azureedge.net/images/2921299551478017-large.jpg\">\n      </div>\n      <div class=\"grid-item grid-item--width2\">\n        <img src=\"https://betacdn.azureedge.net/images/216003870325654-large.jpg\">\n      </div>\n      <div class=\"grid-item\">\n        <img src=\"https://betacdn.azureedge.net/images/185198296892656-large.jpg\">\n      </div>\n      <div class=\"grid-item\">\n        <img src=\"https://betacdn.azureedge.net/images/2921299551478017-large.jpg\">\n      </div>\n      <div class=\"grid-item\">\n        <img src=\"https://betacdn.azureedge.net/images/216003870325654-large.jpg\">\n      </div>\n      <div class=\"grid-item grid-item--width3\">\n        <img src=\"https://betacdn.azureedge.net/images/185198296892656-large.jpg\">\n      </div>\n";
+template.innerHTML = "\n<style>\n  .eventsGrid {\n    position: relative;\n    padding: 2rem 1%;\n    box-sizing: border-box;\n    width: 100%;\n    height: auto;\n    overflow-x: hidden;\n    display: inline-flex;\n    flex-wrap: wrap;\n    gap: 0.5rem;\n  }\n\n</style>\n<div class=\"eventsGrid\">Events!!!</div>\n";
 
 var EventsGrid = /*#__PURE__*/function (_HTMLElement) {
   _inherits(EventsGrid, _HTMLElement);
@@ -156,12 +156,6 @@ var EventsGrid = /*#__PURE__*/function (_HTMLElement) {
     _classCallCheck(this, EventsGrid);
 
     _this = _super.call(this);
-    var elem = document.querySelector('.grid');
-    var pckry = new Packery(elem, {
-      // options
-      itemSelector: '.grid-item',
-      gutter: 10
-    });
 
     _this.attachShadow({
       mode: 'open'
@@ -204,7 +198,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58695" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59539" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

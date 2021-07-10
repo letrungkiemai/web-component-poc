@@ -109,7 +109,7 @@ template.innerHTML = `
         
         .navbar-brand {
             max-height: inherit;
-            padding: 0 48px;
+            padding: 0 150px;
             display: flex;
             align-items: center;
         }
@@ -198,11 +198,11 @@ template.innerHTML = `
 `;
 
 class Navigation extends HTMLElement {
-    constructor() {
-      super();
-      this.attachShadow({ mode: 'open' });
-      this.shadowRoot.appendChild(template.content.cloneNode(true));
-    }
+  constructor() {
+    super();
+    this.attachShadow({ mode: 'open' });
+    this.shadowRoot.appendChild(template.content.cloneNode(true));
   }
+}
 
 customElements.define('c-navigation', Navigation);
